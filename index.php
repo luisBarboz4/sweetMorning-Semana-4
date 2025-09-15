@@ -1,4 +1,4 @@
-<?php session_start(); ?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -11,13 +11,14 @@
         <h1>☕ Sweet Morning</h1>
         <h2>Login</h2>
         <form method="POST" action="valida_login.php">
-            <label>E-mail:</label>
+           <?php session_start(); ?> <label>E-mail:</label>
             <input type="email" name="email" required>
             
             <label>Senha:</label>
             <input type="password" name="senha" required>
             
-            <button type="submit">Entrar</button>
+             <a href="pagina_inicial.php" class="botao">Entrar</a>
+
         </form>
         <p><a href="cadastro.php">Não tem conta? Cadastre-se</a></p>
         <p><a href="admin.php">Login de Administrador</a></p>
