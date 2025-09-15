@@ -17,7 +17,8 @@
             <label>Senha:</label>
             <input type="password" name="senha" required>
             
-            <button type="submit">Entrar</button>
+           <a href="pagina_inicial.php" class="botao">Entrar</a>
+
         </form>
         <p><a href="cadastro.php">Ainda não tem conta? Cadastre-se</a></p>
         <p><a href="login_admin.php">Login de Administrador</a></p>
