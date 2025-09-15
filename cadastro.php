@@ -22,7 +22,9 @@
             <input type="text" name="celular" required>
             
             <button type="submit">Cadastrar</button>
+            <!--adicionar junto do banco-->
         </form>
     </div>
 </body>
 </html>
+
