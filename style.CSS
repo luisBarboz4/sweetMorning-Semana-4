@@ -1,33 +1,38 @@
+/* ======== ESTILOS GERAIS ======== */
 body {
     font-family: Arial, sans-serif;
-    background-color: #2C1B13; 
-    color: #F4E0B8; 
+    background-color: #2C1B13; /* Marrom escuro */
+    color: #F4E0B8; /* Bege */
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
+    margin: 0;
 }
 
 .container {
-    background-color: #7A3E1E;
+    background-color: #7A3E1E; /* Marrom médio */
     padding: 30px;
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0,0,0,.4);
-    width: 300px;
+    width: 90%;
+    max-width: 900px;
     text-align: center;
 }
+
 .logo {
     width: 120px;
     margin-bottom: 10px;
 }
 
-
 h1 {
-    color: #F4C96A;
+    color: #F4C96A; /* Amarelo suave */
+    margin-bottom: 10px;
 }
 
 h2 {
-    color: #E16A2A; 
+    color: #E16A2A; /* Laranja queimado */
+    margin-bottom: 15px;
 }
 
 label {
@@ -42,10 +47,11 @@ input {
     margin-top: 5px;
     border: none;
     border-radius: 6px;
+    outline: none;
 }
 
-button {
-    background-color: #2E5A35; 
+button, .botao {
+    background-color: #2E5A35; /* Verde musgo */
     color: #fff;
     padding: 10px;
     margin-top: 15px;
@@ -54,11 +60,72 @@ button {
     cursor: pointer;
     width: 100%;
     font-weight: bold;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    transition: background 0.2s ease-in-out;
 }
-button:hover {
+
+button:hover, .botao:hover {
     background-color: #1f3f25;
 }
+
 a {
     color: #F4C96A;
     text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* ====== PÁGINA INICIAL ======== */
+.cardapio {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    text-align: left;
+}
+
+.cardapio-item {
+    background-color: #2C1B13;
+    padding: 15px;
+    border-radius: 10px;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    box-shadow: 0 2px 5px rgba(0,0,0,.3);
+}
+
+.cardapio-item:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 12px rgba(0,0,0,.5);
+}
+
+.categoria-titulo {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: #F4C96A;
+    font-size: 20px;
+    border-bottom: 2px solid #F4E0B8;
+    padding-bottom: 5px;
+    text-align: left;
+}
+
+.item-nome {
+    color: #F4C96A;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.item-preco {
+    float: right;
+    color: #F4E0B8;
+    font-size: 15px;
+}
+
+.item-desc {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #F4E0B8;
+    clear: both;
 }
