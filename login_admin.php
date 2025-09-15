@@ -17,10 +17,14 @@
             <label>Senha:</label>
             <input type="password" name="senha" required>
             
-            <button type="submit">Entrar</button>
+             <a href="pagina_inicial.php" class="botao">Entrar</a>
+
         </form>
         <p><a href="login_usuario.php">Voltar ao Login Usuário</a></p>
     </div>
 </body>
 </html>
+
+
+
 
