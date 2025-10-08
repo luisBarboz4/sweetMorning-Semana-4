@@ -21,7 +21,8 @@
 
         </form>
         <p><a href="cadastro.php">Não tem conta? Cadastre-se</a></p>
-        <p><a href="admin.php">Login de Administrador</a></p>
+        <p><a href="login_admin.php">Login de Administrador</a></p>
     </div>
 </body>
 </html>
+
